@@ -1,2 +1,299 @@
-/* Project 1: write all of your styles in this file.
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1A2020;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* Typography & Headings */
+h1, h2, h3, .logo {
+  font-family: "Fraunces", Georgia, serif;
+  color: #22543D;
+}
+
+h1 {
+  font-size: 52px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #22543D;
+}
+
+/* Buttons & Links */
+.btn, button.btn {
+  background-color: #2F855A;
+  color: #FFFFFF;
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  font: inherit;
+}
+
+.btn:hover, button.btn:hover {
+  background-color: #276749;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #E2E8F0;
+  padding: 16px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #2D3748;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #2F855A;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #F0FFF4;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* Why Shop With Us / Features */
+.features h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.feature-card {
+  background-color: #F7FAFC;
+  padding: 32px;
+  border-radius: 12px;
+}
+
+/* Visit Section */
+.visit {
+  background-color: #F0FFF4;
+}
+
+.visit .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.visit table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.visit th, .visit td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #C6F6D5;
+  text-align: left;
+}
+
+.visit th {
+  background-color: #2F855A;
+  color: #FFFFFF;
+}
+
+.visit caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.testimonial {
+  background-color: #FFFFFF;
+  padding: 32px;
+  border-left: 6px solid #2F855A;
+  border-radius: 0 12px 12px 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 12px;
+  color: #4A5568;
+  font-size: 16px;
+  font-style: normal;
+}
+
+/* Join the Mailing List Section */
+.mailing-list {
+  text-align: center;
+}
+
+.mailing-list .container > p {
+  margin-bottom: 32px;
+}
+
+form {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #A0AEC0;
+  border-radius: 8px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+form input[aria-invalid="true"], form select[aria-invalid="true"] {
+  border: 2px solid #C53030;
+}
+
+.error {
+  color: #C53030;
+  font-size: 15px;
+  min-height: 22px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+form button.btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+#form-message {
+  max-width: 520px;
+  margin: 24px auto 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#form-message.success {
+  background-color: #C6F6D5;
+  color: #22543D;
+  font-weight: bold;
+  padding: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #22543D;
+  color: #FFFFFF;
+  padding: 32px 0;
+  font-size: 16px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Small Screens Media Query */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  .site-header .container,
+  footer .container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .hero .container,
+  .feature-list,
+  .visit .container {
+    grid-template-columns: 1fr;
+  }
+}/* Project 1: write all of your styles in this file.
    Follow the layout, font and colour guide in the project brief. */
